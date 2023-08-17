@@ -29,4 +29,15 @@ def checkalgo(review):
         return True
     else:
         return False
+
+# Creating card and pin
+def create_card():
+    def get_pin():
+        pin = ""
+        for each in random.sample(range(9), k=4):
+            pin += str(each)
+        return pin
+
+
+
     

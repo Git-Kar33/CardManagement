@@ -121,7 +121,7 @@ def retrieve_from_db(user_enter_card, user_enter_pin):
                 if user_enters_transferdest == card_number:
                     print("\nYou can't transfer money to the same account!\n")
                     continue
-                elif not check_luhn_algo(user_enters_transferdest):
+                elif not checkalgo(user_enters_transferdest):
                     '# IF CHECK LUHN ALGO RETURNS FALSE. NOT FALSE = TRUE AND THEN WE CONTINUE'
                     print("\nLUHN CHECK:Probably you made a mistake in the card number.\nPlease try again!\n")
                     continue
